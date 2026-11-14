@@ -1,0 +1,265 @@
+{
+  "scope": "Mock Lua 5.3 with stubbed natives; not an engine test.",
+  "results": [
+    {
+      "case": "not chosen -> level 0",
+      "pass": true
+    },
+    {
+      "case": "free selection -> level 1",
+      "pass": true
+    },
+    {
+      "case": "level 1 has no call",
+      "pass": true
+    },
+    {
+      "case": "1999 BP refused, unchanged",
+      "pass": true
+    },
+    {
+      "case": "upgrade to 2 ok",
+      "pass": true
+    },
+    {
+      "case": "abilities at level 2",
+      "pass": true
+    },
+    {
+      "case": "upgrade to 3 ok",
+      "pass": true
+    },
+    {
+      "case": "abilities at level 3",
+      "pass": true
+    },
+    {
+      "case": "upgrade to 4 ok",
+      "pass": true
+    },
+    {
+      "case": "abilities at level 4",
+      "pass": true
+    },
+    {
+      "case": "upgrade to 5 ok",
+      "pass": true
+    },
+    {
+      "case": "abilities at level 5",
+      "pass": true
+    },
+    {
+      "case": "max level refused, total spent 11000",
+      "pass": true
+    },
+    {
+      "case": "own battlefield allowed",
+      "pass": true
+    },
+    {
+      "case": "other battlefield refused",
+      "pass": true
+    },
+    {
+      "case": "center refused: neither",
+      "pass": true
+    },
+    {
+      "case": "center refused: troops there but battle not won",
+      "pass": true
+    },
+    {
+      "case": "center refused: battle won but troops not there",
+      "pass": true
+    },
+    {
+      "case": "carrier aircraft do not count as arrival",
+      "pass": true
+    },
+    {
+      "case": "center allowed: won and arrived",
+      "pass": true
+    },
+    {
+      "case": "arrival latched this round",
+      "pass": true
+    },
+    {
+      "case": "home stays usable after unlock",
+      "pass": true
+    },
+    {
+      "case": "latch resets next round",
+      "pass": true
+    },
+    {
+      "case": "inactive battle refused",
+      "pass": true
+    },
+    {
+      "case": "bonus: center allowed",
+      "pass": true
+    },
+    {
+      "case": "bonus: home refused",
+      "pass": true
+    },
+    {
+      "case": "final: center allowed",
+      "pass": true
+    },
+    {
+      "case": "illegal cast schedules a refund",
+      "pass": true
+    },
+    {
+      "case": "illegal cast refunds 120 mana",
+      "pass": true
+    },
+    {
+      "case": "illegal cast spawns nothing",
+      "pass": true
+    },
+    {
+      "case": "illegal cast message",
+      "pass": true
+    },
+    {
+      "case": "F4F call: exactly 3 F4F",
+      "pass": true
+    },
+    {
+      "case": "F6F call: exactly 3 F6F",
+      "pass": true
+    },
+    {
+      "case": "existing F4Fs stay F4Fs",
+      "pass": true
+    },
+    {
+      "case": "all summons use the carrier lifecycle",
+      "pass": true
+    },
+    {
+      "case": "no summon outside its zone",
+      "pass": true
+    },
+    {
+      "case": "enemy ground unit eligible",
+      "pass": true
+    },
+    {
+      "case": "aircraft not eligible",
+      "pass": true
+    },
+    {
+      "case": "building not eligible",
+      "pass": true
+    },
+    {
+      "case": "own unit not eligible",
+      "pass": true
+    },
+    {
+      "case": "bonus: only bonus enemies",
+      "pass": true
+    },
+    {
+      "case": "strike started",
+      "pass": true
+    },
+    {
+      "case": "strike completes",
+      "pass": true
+    },
+    {
+      "case": "exactly one 4000 chaos hit on the target",
+      "pass": true
+    },
+    {
+      "case": "strike aircraft removed",
+      "pass": true
+    },
+    {
+      "case": "dead target takes no damage",
+      "pass": true
+    },
+    {
+      "case": "invulnerable target takes no damage",
+      "pass": true
+    },
+    {
+      "case": "round cleanup removes strikes",
+      "pass": true
+    },
+    {
+      "case": "illegal strike refunds 60 mana",
+      "pass": true
+    },
+    {
+      "case": "AI keeps a 2000 reserve",
+      "pass": true
+    },
+    {
+      "case": "AI upgrades with spare Blood Points",
+      "pass": true
+    },
+    {
+      "case": "AI level 2 calls F4F",
+      "pass": true
+    },
+    {
+      "case": "AI level 4 strikes the toughest target",
+      "pass": true
+    },
+    {
+      "case": "AI level 5 saves for the air group",
+      "pass": true
+    },
+    {
+      "case": "AI level 5 calls the air group",
+      "pass": true
+    },
+    {
+      "case": "group strike: first wave of 3",
+      "pass": true
+    },
+    {
+      "case": "group strike: 4 waves, 12 strikes, then ends",
+      "pass": true
+    },
+    {
+      "case": "group strike skips targets outside the circle and aircraft",
+      "pass": true
+    },
+    {
+      "case": "round cleanup clears group strikes",
+      "pass": true
+    },
+    {
+      "case": "illegal group strike refunds 120 mana",
+      "pass": true
+    },
+    {
+      "case": "group strike picks the 3 highest Blood Point units",
+      "pass": true
+    },
+    {
+      "case": "next wave takes the next most valuable",
+      "pass": true
+    },
+    {
+      "case": "SB2C bomb final damage is exactly 4000",
+      "pass": true
+    },
+    {
+      "case": "other damage is not changed",
+      "pass": true
+    },
+    {
+      "case": "battle end refills commander mana",
+      "pass": true
+    }
+  ]
+}

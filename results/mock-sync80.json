@@ -1,0 +1,73 @@
+{
+  "scope": "Mock Lua 5.3 with stubbed natives; not an engine or multiplayer test.",
+  "results": [
+    {
+      "case": "all player slots referenced at load",
+      "pass": true
+    },
+    {
+      "case": "created timer referenced",
+      "pass": true
+    },
+    {
+      "case": "wrapped native returns the native result",
+      "pass": true
+    },
+    {
+      "case": "arguments pass through the wrapper",
+      "pass": true
+    },
+    {
+      "case": "nil results are not recorded",
+      "pass": true
+    },
+    {
+      "case": "agent natives are wrapped, other natives are untouched",
+      "pass": true
+    },
+    {
+      "case": "repeat lookups of the same handle add nothing",
+      "pass": true
+    },
+    {
+      "case": "idle poll opens nothing",
+      "pass": true
+    },
+    {
+      "case": "opening a panel activates it",
+      "pass": true
+    },
+    {
+      "case": "opening a second panel closes the first",
+      "pass": true
+    },
+    {
+      "case": "activation closes every other open panel",
+      "pass": true
+    },
+    {
+      "case": "closing the active panel clears focus",
+      "pass": true
+    },
+    {
+      "case": "panel coordination has no trigger evaluation or execution",
+      "pass": true
+    },
+    {
+      "case": "local file worker is a protected call",
+      "pass": true
+    },
+    {
+      "case": "service records are not switched off in multiplayer",
+      "pass": true
+    },
+    {
+      "case": "army overview counts never touch a hashtable",
+      "pass": true
+    },
+    {
+      "case": "no collectgarbage calls",
+      "pass": true
+    }
+  ]
+}

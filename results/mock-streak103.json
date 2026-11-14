@@ -1,0 +1,45 @@
+{
+  "scope": "Mock Lua 5.3 with stubbed natives; not an engine, editor or multiplayer test.",
+  "results": [
+    {
+      "case": "two losses: no compensation",
+      "pass": true
+    },
+    {
+      "case": "side winner's later death is not a loss",
+      "pass": true
+    },
+    {
+      "case": "third loss pays 3000 with a message",
+      "pass": true
+    },
+    {
+      "case": "fourth loss pays 4000",
+      "pass": true
+    },
+    {
+      "case": "fifth loss pays 5000",
+      "pass": true
+    },
+    {
+      "case": "a side win resets the streak",
+      "pass": true
+    },
+    {
+      "case": "a round without troops neither pays nor changes the streak",
+      "pass": true
+    },
+    {
+      "case": "next fielded loss continues to 3 and pays 3000",
+      "pass": true
+    },
+    {
+      "case": "simultaneous wipe is a draw for both",
+      "pass": true
+    },
+    {
+      "case": "queued reinforcements are not a defeat",
+      "pass": true
+    }
+  ]
+}

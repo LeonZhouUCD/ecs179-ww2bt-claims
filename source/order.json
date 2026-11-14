@@ -1,0 +1,4622 @@
+[
+  {
+    "name": "InitGlobals",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitSounds",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateBuildingsForPlayer0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateBuildingsForPlayer1",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateBuildingsForPlayer2",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateBuildingsForPlayer3",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateBuildingsForPlayer4",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateBuildingsForPlayer5",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateBuildingsForPlayer6",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateBuildingsForPlayer7",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateNeutralHostile",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreatePlayerBuildings",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreatePlayerUnits",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateAllUnits",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateRegions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Hashtable_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Hashtable",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Fly_Func001Func007C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Fly_Func001Func008C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Fly_Func001A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Fly_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Fly",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Credits_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Credits",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Naval_IsAdmiral",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_IsPreparationPoint",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_InsideZone",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_HasLivingArmy",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_OpponentCleared",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_IsBattleActive",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_TargetZone",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_IsSource",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_KillerPlayer",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Bounty_Value",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Mao_BattleReward",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Mao_RecruitChance",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Naval_BonusPoints",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_CanDamage",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_EndBarrage",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_BarrageTick",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_RefundRejected",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_RejectAbility",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_Reject",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Naval_Begin",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Carrier_IsCommander",
+    "module": "modules/carrier-and-naval-units.lua"
+  },
+  {
+    "name": "Carrier_PlaneType",
+    "module": "modules/carrier-and-naval-units.lua"
+  },
+  {
+    "name": "Carrier_Forget",
+    "module": "modules/carrier-and-naval-units.lua"
+  },
+  {
+    "name": "Carrier_Stop",
+    "module": "modules/carrier-and-naval-units.lua"
+  },
+  {
+    "name": "Carrier_TickUnit",
+    "module": "modules/carrier-and-naval-units.lua"
+  },
+  {
+    "name": "Carrier_Tick",
+    "module": "modules/carrier-and-naval-units.lua"
+  },
+  {
+    "name": "Carrier_DamageGuard",
+    "module": "modules/carrier-and-naval-units.lua"
+  },
+  {
+    "name": "Carrier_Begin",
+    "module": "modules/carrier-and-naval-units.lua"
+  },
+  {
+    "name": "Carrier_OnCast",
+    "module": "modules/carrier-and-naval-units.lua"
+  },
+  {
+    "name": "Carrier_AIThink",
+    "module": "modules/carrier-and-naval-units.lua"
+  },
+  {
+    "name": "Carrier_Init",
+    "module": "modules/carrier-and-naval-units.lua"
+  },
+  {
+    "name": "Mac70_Carrier",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_GetLevel",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_Apply",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_LevelMessage",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_Upgrade",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_OnSync",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_PanelActive",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_PanelText",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_RenderPanel",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_RequestUpgrade",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_TroopsInCenter",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_CentralOpen",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_ZoneAllowed",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_TargetZone",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_Reject",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_FinalSide",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_Summon",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_CallPoint",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_StrikeTarget",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_CallStrike",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_GroundZ",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_StartStrike",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_StrikeStep",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_FinishStrike",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_StrikeTick",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_StopStrikes",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_Spent",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_CallBarrage",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_BarrageWave",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac73_MostValuable",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac73_OnDamaged",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac73_RefillCommanders",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac73_SelectCommander",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac73_RefreshButton",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac73_UIInit",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_BarrageTick",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_OnCast",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_ArrivalTick",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_AIPoint",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_AIStrikeTarget",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_AIThink",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_AIUpgrade",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_RegisterOverview",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Mac70_Init",
+    "module": "modules/macarthur.lua"
+  },
+  {
+    "name": "Naval_Init",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Trig_Naval_Bombard_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Naval_Bombard_Func001C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Naval_Bombard_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Naval_Bombard",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Cast_Normal_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Cast_Normal_Func001C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Cast_Normal_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Artillery_Cast_Normal",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Continue_Normal_Func001C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Continue_Normal_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Continue_Normal_Func006C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Continue_Normal_Func008001003001",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Continue_Normal_Func008001003002001",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Continue_Normal_Func008001003002002",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Continue_Normal_Func008001003002",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Continue_Normal_Func008001003",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Continue_Normal_Func008A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Artillery_Continue_Normal_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Artillery_Continue_Normal",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_BotColorName_Func041Func002Func002C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_BotColorName_Func041Func002C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "ResourceTrading_Lock",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_BotColorName_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_BotColorName",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Region_names_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Region_names",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Print",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "RandomPlayerOrder",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GetPlayerColorFlag",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GetColorEnd",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GetColorPlayerName",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "SetMultiboardItemPlayerColor",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "RoundSchedule_IsBonusRound",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "RoundSchedule_IsFinalRound",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GetOpponentPlayer",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "OpponentSetMatchup",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "SetOpponents",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "SetBonusDisplay",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "UpdateBonusDisplay",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "AddBonus",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "DestroyBonusDisplay",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GetNextByPriority",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "DoSpawn",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GroupHideUnitsEnum",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "SpreadHideRemainder",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "SpreadInSite",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "SpawnGetNextTokenEnum",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "SpawnGetNextToken",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "CavalryCharge_IsCavalry",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_IsCharger",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_GetRange",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_BayonetImpactDamage",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_InitInfantry",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_IsInfantry",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_IsTarget",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_FindTarget",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_RemoveBonus",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_ExpireBonus",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_TryCharge",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_Process",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_Enum",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_OnTick",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_Register",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_Begin",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "CavalryCharge_Stop",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Yamato_IsAirTarget",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Yamato_FireAA",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Yamato_TickShip",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Yamato81_ShipBattery",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Yamato_OnTick",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Yamato_Register",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Yamato_Begin",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Yamato_Stop",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Yamato_UpdateAvailability",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "China_IsNativeCommunist",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_IsCommunist",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Mao_DiscountType",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Mao_CanonicalType",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Mao_SetAvailability",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Mao_ApplyInfantry",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Lin_Apply",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Lin_RefreshPlayer",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Lin_OnOwner",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Agent_Value",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "Agent_Valid",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "Agent_Release",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "Agent_Find",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "Agent_Tick",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "Agent_Register",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "Agent_Init",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "China_Register",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_IsEnemyCombatant",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_TrackCombat",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_ClearConvertedCorpses",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_ClearRecruitEffect",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_ShowRecruitEffect",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_TryRecruit",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_OnSummon",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_GrenadeImpact",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_GrenadeFlight",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_LaunchGrenade",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_OnGrenade",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_GrenadierThink",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_ClearDeadState",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "China_OnTick",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "France_Alive",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_Active",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_Target",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_ProjectileTick",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_Shot",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_Fire",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "FCM53_FireSecondary",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "FCM53_OnAttack",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "FCM53_Init",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "France_Taunt",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_Think",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_FaceFortress",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_PlaceFortress",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_DuelScan",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_DuelMove",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "HP88_OnlyFortresses",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "France_CheckFortressDuel",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_Tick",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_Register",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_RouteEvent",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "France_Init",
+    "module": "modules/france.lua"
+  },
+  {
+    "name": "DoSpawn2",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateSpawnArray",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "SpawnUnits2",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "France57_DeployFortress",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CenterSpawn",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Battle77_InitialOrder",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "AttackEnum",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "ArmyEconomy_IsTracked",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_IsUpgrade",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_Set",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_Ensure",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_Gold",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_Wood",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_Transfer",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_RefundAndRemove",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "SellAll94_OnCast",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "SellAll94_Init",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_OnEvent",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_Register",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypes00",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypes01",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypes02",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypes03",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypes04",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypes05",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypes06",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypes07",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypes08",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypesP63_0",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypesP63_1",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "Italy75_Economy0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Vehicles78_Economy0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Tanks79_Economy0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Artillery81_Economy0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_Economy0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "ArmyEconomy_LoadTypes",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyEconomy_Init",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyPoints_CommanderValue",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "ArmyPoints_UnitValue",
+    "module": "modules/economy-and-production.lua"
+  },
+  {
+    "name": "Bounty_AssignBatch",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Mao_ConvertBuilding",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Mao_Refresh",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Lin_Activate",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Mao_Activate",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Mao_OnEvent",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Mao_Init",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "CalcArmyPointsCb",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CalcArmyPoints",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "ScoreFaction_CountryName",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "ScoreFaction_Flag",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "ScoreFaction_IsFlag",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "ScoreFaction_Observe",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "ScoreFaction_ReadPlayer",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "PF73_Config",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "DG73_Log",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Fault",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Token",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Number",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Parse",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Encode",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Honor",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Rank",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Icon",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Escape",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Write",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "DG73_Export",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "DG73_OnChat",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Read",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_ChooseBackup",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_LocalLoad",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Apply",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_OnSync",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_SaveLocal",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Record",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Drain",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Enqueue",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Result",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_OnLeave",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Snapshot",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Tick",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Empty",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_LocalWork",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_LocalPulse",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Init",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "ScoreFaction_SetRow",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "ScoreFaction_ResetRows",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "ScoreFaction_Refresh",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "ScoreFaction_Init",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "Score63_DestroyCurrent",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "CreateVsRoundScoreboard",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "CreatePreRoundScoreboard",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "CountdownAttackMidHandler",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CountdownTickHandler",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CountdownTick",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "StartVsRound",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateBonusScoreboard",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "SetupPeasantSlaughter",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "BonusCleanupDefault_Enum",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Perf_CombatForGroupAndDestroy",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "BonusCleanupDefault",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "CreateTournamentScoreboard",
+    "module": "modules/scoreboards.lua"
+  },
+  {
+    "name": "PickHighestBonus",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "SetupFinalTournament",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "FinalTournamentCleanup_Enum",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "FinalTournamentCleanup",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "DoFinalTournamentRound",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "EndRoundCleanUnits",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "pizdec",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_pizdec",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Misc_init_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Misc_init",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Create_Shuffled_Array_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "BLEYHR",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Create_Shuffled_Array",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_UpdateAvailability",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_StartGame_Func007A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_StartGame_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_StartGame",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Start_PreRound_Func006Func001Func001A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Start_PreRound_Func006Func001Func002A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Start_PreRound_Func006Func001C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Start_PreRound_Func006Func005A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Start_PreRound_Func006Func007C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Start_PreRound_Func006C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Start_PreRound_Func007Func002A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Start_PreRound_Func007Func004C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Start_PreRound_Func007C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Start_PreRound_Func009A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Start_PreRound_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Start_PreRound",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_PreRoundExpire_Func004Func001Func005A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_PreRoundExpire_Func004Func001C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_PreRoundExpire_Func004Func004C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_PreRoundExpire_Func004C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_PreRoundExpire_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_PreRoundExpire",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_PlayerUnitDies_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "PUD_CheckSamePlayer",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Round012_ClearSurvivors",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Combat45_IsTroop",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Combat45_Active",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Combat45_ReconcilePlayer",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Combat45_Tick",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Combat45_CheckEnd",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Combat45_Summon",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Combat45_Init",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Trig_PlayerUnitDies_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_PlayerUnitDies",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_EndRound_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_EndRound",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Unstuck_Order_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Periodic_Unstuck_Copy_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Periodic_Unstuck_Copy",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "FirstBonusReward_Award",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Bonus94_BloodPoints",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_DoBonusRound_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "BonusUnitAwardPoint",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_BonusPlayerUnitDies_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_DoBonusRound",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_DoFinalTournament_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "FinalTourOnDeath",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_DoFinalTournament",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Nation50_EnsureBuilder",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation50_Grant",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation50_OnChosen",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation50_Init",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Trig_Random_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Random_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Random",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_CurrentGold",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_CurrentBP",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_TotalGold",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_TotalBP",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_IsTank",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_IsTankUpgrade",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_ForgetWorker",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_ReconcileWorker",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_RefundTank",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_RefundExistingTanks",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_VeteranType",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_ReplaceInGroup",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_PreserveReferences",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_ReplaceUnit",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_ConvertOwnedUnit",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_ConvertPlayer",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "GermanRoutes_OnProduction",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Erwin_Rommel_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Erwin_Rommel_Func004A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Erwin_Rommel_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Erwin_Rommel",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Heinrich_Himmler_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Heinrich_Himmler_Func004A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Heinrich_Himmler_Func005A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Heinrich_Himmler_Func006A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Heinrich_Himmler_Func007A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Heinrich_Himmler_Func008A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Heinrich_Himmler_Func009A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Heinrich_Himmler_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Heinrich_Himmler",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Yamamoto_and_Nimitz_Func001C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Yamamoto_and_Nimitz_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Yamamoto_and_Nimitz_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Yamamoto_and_Nimitz",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Alan_Turing_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Alan_Turing_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Alan_Turing",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Unstuck_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Unstuck_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Unstuck",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Sell_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Sell_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Sell",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_bstone_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_bstone",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_AddUproot_Func002001",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_AddUproot_Func002002",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_AddUproot_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_AddUproot_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_AddUproot",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_RootMove_AllConditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_RootMove_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_RootMove_Func002C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_RootMove_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_RootMove",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_OpponentChatCommand_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_OpponentChatCommand",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kaboom_Func007C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kaboom_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kaboom_Func003Func001Func001C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kaboom_Func003Func001C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kaboom_Func003A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kaboom_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Kaboom",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kamikaze_Func007C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kamikaze_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kamikaze_Func003Func001Func001C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kamikaze_Func003Func001C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kamikaze_Func003A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Kamikaze_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Kamikaze",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_NUKE_Func007C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_NUKE_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_NUKE_Func003A",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_NUKE_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_NUKE",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Victory_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Victory",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Battlefield_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Battlefield",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Hell_March_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Hell_March",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Medal_of_Honor_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Medal_of_Honor",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Heart_of_Iron_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Heart_of_Iron",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Music_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Music",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Music_Finals_Func002C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Music_Finals_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Music_Finals",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_RaiseDead_Conditions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_RaiseDead_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_RaiseDead",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Limits_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Limits",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Limits_start_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "China_OnRouteChosen",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_ExpireStunCaster",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_Stun",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_EndVolley",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_StartVolley",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_ShellTick",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_ExtraShell",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_BurstShell",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_QueueBurst",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_OnDamage",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_PrioritizeArmor",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_OnAttack",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_OnSpell",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "Volunteer_Init",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "LinFire_Active",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "LinFire_BattleValid",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "LinFire_TargetAllowed",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "LinFire_Impact",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "LinFire_Tick",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "LinFire_Launch",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "LinFire_OnAttack",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "LinFire_OnDamage",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "LinFire_OnDeath",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "LinFire_ClearPending",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "LinFire_Init",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "China_Init",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "InitTrig_Limits_start",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_info_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_info",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Leavers_announced_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Leavers_announced",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Bots_Func001Func001C",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Trig_Bots_Actions",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitTrig_Bots",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitCustomTriggers",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "RunInitializationTriggers",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitCustomPlayerSlots",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitCustomTeams",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "InitAllyPriorities",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "NewAI_CatalogUnit",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_CatalogBlock00",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_CatalogBlock01",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_CatalogBlock02",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_CatalogBlock03",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_CatalogBlock04",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_CatalogBlock05",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_CatalogBlock06",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_CatalogBlock07",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_CatalogBlock08",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData0",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData1",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData2",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData3",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData4",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData5",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData6",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData7",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData8",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData9",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData10",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData11",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData12",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData13",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData14",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData15",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData16",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData17",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData18",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData19",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData20",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData21",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData22",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData23",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData24",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData25",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData26",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData27",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData28",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData29",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData30",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData31",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData32",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData33",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData34",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData35",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData36",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData37",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData38",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData39",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData40",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData41",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData42",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData43",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData44",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData45",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData46",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData47",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData48",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData49",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData50",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData51",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData52",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData53",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData54",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData55",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData56",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData57",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData58",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData59",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData60",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData61",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData62",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData63",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData64",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData65",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData66",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData67",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData68",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData69",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData70",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData71",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData72",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData73",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData74",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData75",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData76",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData77",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData78",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData79",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData80",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData81",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData82",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellData83",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_LoadCatalog",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "DifficultyChoice_Apply",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "DifficultyChoice_OnTimeout",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "DifficultyChoice_OnRedLeave",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "DifficultyChoice_OnClick",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "DifficultyChoice_OnPrepare",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "DifficultyChoice_Init",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "NewAI_RecoveryEvent",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_RecoveryInit",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_Engaged",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "Advance_OrderAllowed",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "NewAI_RecoveryProcess",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "Advance_SpecialBusy",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Advance_AirHunt",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Advance_Issue",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "Advance_Manual",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "WomanAdvance_Check",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "WomanAdvance_Tick",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "WomanAdvance_Init",
+    "module": "modules/movement-and-battle.lua"
+  },
+  {
+    "name": "NewAI_RecoverySeat",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellReset",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellAccumulate",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_Random",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HimmlerConverts",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_TrackGermanConversion",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_Scan",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_CanBuy",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_SelectNation",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_ResolveRandom",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellPower",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellScore",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellCandidate",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellFood",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellClearCandidates",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellPlan",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_HellSiteDistance",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_Score",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_PointFree",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_FindSite",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_EconomyScore",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_GermanRouteAllowed",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_PickGermanRoute",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_KeepGermanOptions",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_PolishRouteScore",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_NoteOrder",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "France54_PickRoute",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "NewAI_Consider",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_ConsiderActor",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_OnRommelReady",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_Think",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_SetControl",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_OnLeave",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_OnBattle",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_OnPrepare",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_OnTick",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_StatusText",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_OnChat",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "NewAI_RecordLobby",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "Petain63_AIData0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData1",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData2",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData3",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData4",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData5",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData6",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData7",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData8",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData9",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData10",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData11",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData12",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData13",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData14",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData15",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData16",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData17",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData18",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData19",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData20",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData21",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData22",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData23",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData24",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Petain63_AIData25",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Italy75_AI0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Italy75_AI1",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Italy75_AI2",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Italy75_AI3",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Italy75_AI4",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Italy75_AI5",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Italy75_AI6",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Vehicles78_AI0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Vehicles78_AI1",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Vehicles78_AI2",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Vehicles78_AI3",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Tanks79_AI0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Tanks79_AI1",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Tanks79_AI2",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Tanks79_AI3",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Tanks79_AI4",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Tanks79_AI5",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Artillery81_AI0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Artillery81_AI1",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Artillery81_AI2",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI1",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI2",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI3",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI4",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI5",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI6",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI7",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI8",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI9",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI10",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI11",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AI12",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Mao_AICatalog",
+    "module": "modules/china.lua"
+  },
+  {
+    "name": "NewAI_Init",
+    "module": "modules/ai.lua"
+  },
+  {
+    "name": "UI5_Frame",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI5_Cache",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "PerfUI_SetText",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "PerfUI_SetTexture",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "PerfUI_SetVisible",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "UI5_Box",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI44_X",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI44_Scale",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI44_Box",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI44_NativeBox",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI5_Hide",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI5_Backdrop",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI5_Text",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI6_AttackIcon",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI6_ArmorIcon",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI6_BoardStyle",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI5_InventoryHide",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI9_NativeBase",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI9_MoveCommand",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI9_LayoutProgress",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI9_NativeDetailActive",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI64_Target",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "UI64_Conceal",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "UI64_SetModal",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "UI70_Left",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI5_Layout",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI8_CheckLayout",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI5_Fill",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI7_UpdateResources",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI45_Representative",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI10_ArmorStats",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI10_AttackStats",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI8_AttackTip",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI8_ArmorTip",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI8_AttackTipRow",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI8_ArmorTipRow",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI11_UpdateRows",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI76_SyncLists",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI5_Update",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI8_CreateTypeTip",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "AO_Frame",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Register",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load0",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load1",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load2",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load3",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load4",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load5",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load6",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load7",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load8",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load9",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load10",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load11",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load12",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load13",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load14",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load15",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load16",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load17",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load18",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load19",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load20",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load21",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load22",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load23",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load24",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load25",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load26",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load27",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load28",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load29",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load30",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load31",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load32",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load33",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load34",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load35",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load36",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load37",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load38",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load39",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load40",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load41",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load42",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load43",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load44",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load45",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load46",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load47",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load48",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load49",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load50",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load51",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load52",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load53",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load54",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load55",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load56",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load57",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load58",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load59",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load60",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load61",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load62",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load63",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load64",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load65",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load66",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load67",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load68",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load69",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load70",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load71",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load72",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load73",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load74",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load75",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load76",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load77",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load78",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load79",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load80",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load81",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load82",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load83",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load84",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load85",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load86",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load87",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load88",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load89",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load90",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load91",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load92",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load93",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Load94",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "Italy75_Overview0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Italy75_Overview1",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Italy75_Overview2",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Italy75_Overview3",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Vehicles78_AO0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Tanks79_AO0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Tanks79_AO1",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Tanks79_AO2",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Tanks79_AO3",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Artillery81_AO0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Artillery81_AO1",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AO0",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AO1",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AO2",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AO3",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "Forces82_AO4",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "AO_LoadData",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Add",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Building",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Collect",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Render",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Refresh",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_RefreshLocal",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Layout",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "PM69_Register",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "PM69_Activate",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "PM69_Poll",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "AO_Click",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Text",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Button",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "AO_Init",
+    "module": "modules/army-overview.lua"
+  },
+  {
+    "name": "Nation58_Type",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Name",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Description",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Strengths",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Weaknesses",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Icon",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_FactionName",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_FactionDescription",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_FactionStrengths",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_FactionWeaknesses",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_FactionType",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_FactionIcon",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_ValidHuman",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_IsNation",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Request",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_FactionParent",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_RequestFaction",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_OrderFaction",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_OnSync",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_OnUpgrade",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_OnCancel",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Frame",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Show",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Enable",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Feedback",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_HoverCode",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_ModalBoard",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_FocusWorker",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_DifficultyName",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_DifficultyView",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_UpdateHighlights",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Render",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Click",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Hover",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Poll",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Backdrop",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Text",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_BannerLabel",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "Nation58_Init",
+    "module": "modules/nation-selection.lua"
+  },
+  {
+    "name": "CM67_Load",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_Frame",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_Parent",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_Option",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_Status",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_Request",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_OnSync",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_OnUpgrade",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_Layout",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "UI70_Entries",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "CM67_Render",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_Click",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_Tick",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_Text",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_Button",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "CM67_Init",
+    "module": "modules/commanders.lua"
+  },
+  {
+    "name": "PM69_CommanderOpen",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "PM69_CommanderClose",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "PM69_ArmyOpen",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "PM69_ArmyClose",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "PM69_ScoreOpen",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "PM69_ScoreClose",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "PM69_Init",
+    "module": "modules/panel-coordination.lua"
+  },
+  {
+    "name": "PF73_Frame",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_IsOpen",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Close",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Render",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Click",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Text",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_Button",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "PF73_UIInit",
+    "module": "modules/profiles-and-achievements.lua"
+  },
+  {
+    "name": "UI5_Initialize",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "UI5_Start",
+    "module": "modules/unit-interface.lua"
+  },
+  {
+    "name": "Air95_Turret",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air95_BombDamage",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air93_InRun",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air93_CreateRun",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air93_Finish",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air93_Step",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air88_BattleActive",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Zone",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Valid",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_IsBomber",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_OnAttack",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_OnDamage",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Evasion",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_TurretHit",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Turrets",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Footprint",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_StartRun",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Impact",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air88_RunTick",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air88_StartRunTimer",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Think",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Tick",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air88_StartTimer",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Register",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air88_PrepareBomber",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air88_Begin",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air88_OnDeath",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Enter",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air93_ForgetBomber",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Stop",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Air82_Init",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Elite82_Valid",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Elite82_OnAttack",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Elite82_Enter",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Elite82_Stop",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Ita73_OnDamaged",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Ita73_Tick",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Ita73_Clear",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "Elite82_Init",
+    "module": "modules/italian-aircraft.lua"
+  },
+  {
+    "name": "US95_IsAircraft",
+    "module": "modules/us-air-force.lua"
+  },
+  {
+    "name": "US95_Spawn",
+    "module": "modules/us-air-force.lua"
+  },
+  {
+    "name": "US95_RegisterEconomy",
+    "module": "modules/us-air-force.lua"
+  },
+  {
+    "name": "US95_AOUnit",
+    "module": "modules/us-air-force.lua"
+  },
+  {
+    "name": "US95_AOProducer",
+    "module": "modules/us-air-force.lua"
+  },
+  {
+    "name": "US95_AOSupport",
+    "module": "modules/us-air-force.lua"
+  },
+  {
+    "name": "US95_RegisterOverview",
+    "module": "modules/us-air-force.lua"
+  },
+  {
+    "name": "US95_AIMultiplier",
+    "module": "modules/us-air-force.lua"
+  },
+  {
+    "name": "US95_AIAccumulate",
+    "module": "modules/us-air-force.lua"
+  },
+  {
+    "name": "US95_AIAdd",
+    "module": "modules/us-air-force.lua"
+  },
+  {
+    "name": "US95_RegisterAI",
+    "module": "modules/us-air-force.lua"
+  },
+  {
+    "name": "Missile81_Launch",
+    "module": "modules/yamato.lua"
+  },
+  {
+    "name": "Missile81_Tick",
+    "module": "modules/yamato.lua"
+  },
+  {
+    "name": "Missile81_Clear",
+    "module": "modules/yamato.lua"
+  },
+  {
+    "name": "Yamato81_AAHit",
+    "module": "modules/yamato.lua"
+  },
+  {
+    "name": "Yamato81_IsShellTarget",
+    "module": "modules/yamato.lua"
+  },
+  {
+    "name": "Yamato81_FireBattery",
+    "module": "modules/yamato.lua"
+  },
+  {
+    "name": "Yamato81_Salvo",
+    "module": "modules/yamato.lua"
+  },
+  {
+    "name": "Yamato81_OnDamaged",
+    "module": "modules/yamato.lua"
+  },
+  {
+    "name": "Yamato81_TickVolleys",
+    "module": "modules/yamato.lua"
+  },
+  {
+    "name": "Yamato81_Init",
+    "module": "modules/yamato.lua"
+  },
+  {
+    "name": "Zhukov_IsRoute",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_Defer",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_Process",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_Begin",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_InProgress",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_Refund",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_ConvertBuilder",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_Normalize",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_ReplaceBuilding",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_NormalizeCombat",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_RemoveForbiddenTroops",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_Apply",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_OnProduction",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_CanonicalType",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_SpawnInfantry",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_Spawn",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_RecordBatch",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_RegisterT28",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_BattleActive",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_IsMGTarget",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_T28Fire",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_T28Hit",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_T28Tick",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_Stop",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_Economy",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_AOVehicle",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_AOProducer",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_AOSupport",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_Overview",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_AICopy",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_AIAdd",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_RegisterAI",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_AIScore",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "Zhukov_Init",
+    "module": "modules/zhukov.lua"
+  },
+  {
+    "name": "CT102_Spawn",
+    "module": "modules/communist-tanks.lua"
+  },
+  {
+    "name": "CT102_Economy",
+    "module": "modules/communist-tanks.lua"
+  },
+  {
+    "name": "CT102_Overview",
+    "module": "modules/communist-tanks.lua"
+  },
+  {
+    "name": "CT102_RegisterAI",
+    "module": "modules/communist-tanks.lua"
+  },
+  {
+    "name": "main",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "config",
+    "module": "modules/inherited-map.lua"
+  },
+  {
+    "name": "LS103_RoundStart",
+    "module": "modules/losing-streak.lua"
+  },
+  {
+    "name": "LS103_CheckSides",
+    "module": "modules/losing-streak.lua"
+  },
+  {
+    "name": "LS103_RoundEnd",
+    "module": "modules/losing-streak.lua"
+  },
+  {
+    "name": "UK103_Spawn",
+    "module": "modules/british.lua"
+  },
+  {
+    "name": "UK103_AddChild",
+    "module": "modules/british.lua"
+  },
+  {
+    "name": "UK103_Economy",
+    "module": "modules/british.lua"
+  },
+  {
+    "name": "UK103_AO",
+    "module": "modules/british.lua"
+  },
+  {
+    "name": "UK103_Overview",
+    "module": "modules/british.lua"
+  },
+  {
+    "name": "UK103_AIChild",
+    "module": "modules/british.lua"
+  },
+  {
+    "name": "UK103_RegisterAI",
+    "module": "modules/british.lua"
+  },
+  {
+    "name": "PL104_Now",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Alive",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Pid",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Ready",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Spawn",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_IsAircraft",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_InitInfantry",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Turret",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_BombDamage",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Register",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_RegisterEnum",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Begin",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Release",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Stop",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Prune",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_BearImpact",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_BearCooling",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_BearCharged",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_BearAdvance",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Artillery",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_IsGhost",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Conceal",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Zone",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Stun",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Blink",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_OnAttacked",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_OnDamaged",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Fury",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_SweepTarget",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_SectorHasTarget",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Volley",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_OrlikThink",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_BurstTick",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_SegmentDistance",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_BulletHit",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_BulletTick",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_MarkValid",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_MarkReason",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Mark",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_MarkFollow",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_MarkTick",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_OnCast",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Tick",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Holds",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Count",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_RefreshLimits",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_CheckUpgrades",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_OnUpgrade",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_AddChild",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Economy",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_AO",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Overview",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_AIReset",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_RegisterAI",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_AIChild",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "PL104_Init",
+    "module": "modules/poland.lua"
+  },
+  {
+    "name": "KMT106_Spawn",
+    "module": "modules/kmt.lua"
+  },
+  {
+    "name": "KMT106_AddChild",
+    "module": "modules/kmt.lua"
+  },
+  {
+    "name": "KMT106_Economy",
+    "module": "modules/kmt.lua"
+  },
+  {
+    "name": "KMT106_Overview",
+    "module": "modules/kmt.lua"
+  },
+  {
+    "name": "KMT106_RegisterAI",
+    "module": "modules/kmt.lua"
+  }
+]
