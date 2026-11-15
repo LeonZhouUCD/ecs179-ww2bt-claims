@@ -2,7 +2,7 @@
 
 This repository contains draft claims for **Game Systems**, **Debugging and Testing**, and **Interaction Design**, all at **Developed**. The claims are based on my work extending an existing Warcraft III custom map, WW2 Blood Tournament.
 
-The source snapshot is from **1.0.6 (Lua31)**. This is a collection of code and test evidence, not a complete playable map. The original map contains inherited work, so I still need to identify my own contributions below.
+The source snapshot is from **1.0.6 (Lua31)**. This is a collection of code and test evidence, not a complete playable map. The original map contains inherited work; my contributions and AI assistance are described below.
 
 `[TO CONFIRM]` marks information I need to fill in before submission. `[TODO]` marks missing screenshots or videos.
 
@@ -68,7 +68,7 @@ The commander panel shows the current level, the next upgrade's cost, and the ab
 
 A click sends a synchronized upgrade request. While waiting, the interface can show a confirmation message and temporarily prevent further requests. The synchronized handler validates the upgrade and provides a result message. The intended flow is for the player to understand the requirements, request an upgrade, and receive feedback about what happened.
 
-I am applying for Developed because these design choices explain upgrade requirements and give players feedback about available actions. The supporting tests verify gameplay rules behind the interface. Actual interface behavior and player comprehension still need demonstration.
+I am applying for Developed because these design choices explain upgrade requirements and give players feedback about available actions. The supporting tests verify gameplay rules behind the interface. My manual tests below check the interface's behavior in the game; screenshots and a video are still to be added.
 
 **Code and tests**
 
@@ -81,7 +81,7 @@ I am applying for Developed because these design choices explain upgrade require
 
 Claude Code handled most of the implementation, and I was responsible for testing the interface in the game.
 
-**My verification:** I personally tested the interface in Warcraft III. [TO CONFIRM: Describe the upgrade states I checked and what I observed. Include feedback from other players only if it was actually obtained.]
+**My verification:** I personally tested the interface in Warcraft III and confirmed that the upgrade button was disabled when resources were insufficient, the required upgrade cost was displayed correctly, and upgrading worked when I had enough resources. These were manual in-game checks, separate from the automated test results linked above.
 
 **Screenshot:** [TODO: Add an actual in-game screenshot of the commander panel.]
 
@@ -102,12 +102,12 @@ Results are written to `results/`. The tests stub Warcraft III engine functions,
 
 The Lua files in `source/` are unchanged copies of the 1.0.6 modular project. The test cases come from that release; their file-loading and output paths were adapted for this repository. The losing-streak test reads the modular Lua source directly instead of extracting the same functions from the assembled map script. The older panel file is included only for comparison.
 
-Codex reran these three suites while preparing this repository on November 14, 2026. That run is separate from the personal verification statements I still need to complete.
+Codex reran these three suites while preparing this repository on November 14, 2026. That run is separate from the manual in-game testing described in the claims.
 
 ## Credits and AI assistance
 
 - **Original map and inherited work:** [TO CONFIRM: Add the original author credits and identify what existed before my changes.]
-- **My work:** I defined the losing-streak rules and wrote the initial framework, investigated multiplayer disconnects and tested repair iterations, and proposed the commander upgrade interaction and tested it in the game. The claim sections above describe these contributions and mark the remaining verification details to complete.
+- **My work:** I defined the losing-streak rules and wrote the initial framework, investigated multiplayer disconnects and tested repair iterations, and proposed the commander upgrade interaction and tested it in the game. The claim sections above describe these contributions and my manual verification.
 - **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
 - **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. For the commander upgrade interface, I proposed the interaction design, Claude Code handled most of the implementation, and I tested it in the game. [TO CONFIRM: Identify the original authorship of the automated test scripts.]
 
