@@ -68,7 +68,7 @@ The commander panel shows the current level, the next upgrade's cost, and the ab
 
 A click sends a synchronized upgrade request. While waiting, the interface can show a confirmation message and temporarily prevent further requests. The synchronized handler validates the upgrade and provides a result message. The intended flow is for the player to understand the requirements, request an upgrade, and receive feedback about what happened.
 
-I am applying for Developed because the interaction accounts for resource availability, progression, and a pending request. The supporting tests verify gameplay rules behind the interface. Actual interface behavior and player comprehension still need demonstration.
+I am applying for Developed because these design choices explain upgrade requirements and give players feedback about available actions. The supporting tests verify gameplay rules behind the interface. Actual interface behavior and player comprehension still need demonstration.
 
 **Code and tests**
 
@@ -77,9 +77,11 @@ I am applying for Developed because the interaction accounts for resource availa
 - [Supporting tests](tests/test_mac70.py): affordability, deductions, ability unlocks, and maximum-level rejection.
 - [Test results](results/mock-mac70.json): **65/65 passed** for the broader MacArthur module. These are not 65 interface or usability tests.
 
-**My contribution:** [TO CONFIRM: Which behavior, wording, layout, or feedback did I personally design or change? Explain one decision and the problem it addressed.]
+**My contribution:** I proposed the level and cost displays, disabling the upgrade button when resources are insufficient, and feedback after upgrading. For example, I wanted the button to be disabled when the player could not afford an upgrade while still showing the required cost, so the player could understand why upgrading was unavailable and how much it would cost.
 
-**My verification:** [TO CONFIRM: What did I personally check in the game? Include player observations only if they were actually recorded.]
+Claude Code handled most of the implementation, and I was responsible for testing the interface in the game.
+
+**My verification:** I personally tested the interface in Warcraft III. [TO CONFIRM: Describe the upgrade states I checked and what I observed. Include feedback from other players only if it was actually obtained.]
 
 **Screenshot:** [TODO: Add an actual in-game screenshot of the commander panel.]
 
@@ -105,8 +107,8 @@ Codex reran these three suites while preparing this repository on November 14, 2
 ## Credits and AI assistance
 
 - **Original map and inherited work:** [TO CONFIRM: Add the original author credits and identify what existed before my changes.]
-- **My work:** [TO CONFIRM: Complete the contribution and verification fields under each claim.]
+- **My work:** I defined the losing-streak rules and wrote the initial framework, investigated multiplayer disconnects and tested repair iterations, and proposed the commander upgrade interaction and tested it in the game. The claim sections above describe these contributions and mark the remaining verification details to complete.
 - **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
-- **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. [TO CONFIRM: Describe AI assistance for the Interaction Design claim and identify the original authorship of the automated test scripts.]
+- **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. For the commander upgrade interface, I proposed the interaction design, Claude Code handled most of the implementation, and I tested it in the game. [TO CONFIRM: Identify the original authorship of the automated test scripts.]
 
 The screenshots and videos are still to be added. All three competency levels are requested, not yet verified by the course staff.
