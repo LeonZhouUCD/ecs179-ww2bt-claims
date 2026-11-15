@@ -54,11 +54,11 @@ Claude Code handled most of the code-level analysis and repair. I personally par
 
 [TO CONFIRM: Identify who designed or selected the automated regression tests and which, if any, I personally reviewed or ran.]
 
-**My verification:** My initial hypothesis was that the disconnects were caused by network problems. My friend and I switched among US, European, and Asian servers and tried troubleshooting our connections. These checks did not explain or resolve the disconnects. Reviewing the disconnect logs then indicated a desynchronization error, which shifted the investigation toward client-local UI behavior and Lua object-reference handling. These observations identify the failure as a desynchronization issue; they do not by themselves establish the exact code-level cause or demonstrate that the fixes resolved it.
+**My verification:** My initial hypothesis was that the disconnects were caused by network problems. My friend and I switched among US, European, and Asian servers and tried troubleshooting our connections. These checks did not explain or resolve the disconnects. Reviewing the disconnect logs then indicated a desynchronization error, which shifted the investigation toward client-local UI behavior and Lua object-reference handling. These initial observations identified a desynchronization issue but did not by themselves establish the exact code-level cause.
 
-My testing during the repair iterations was manual in-game testing, separate from the automated mock results linked above. [TO CONFIRM: Describe the results of the multiplayer retests, including whether disconnects recurred and the approximate number or duration of test sessions.]
+After the fixes, my friend and I tested approximately three multiplayer matches and observed no further disconnects in those matches. These retests, like my testing during each repair iteration, were manual in-game tests, separate from the automated mock results linked above.
 
-**Demonstration:** [TODO: Add an anonymized disconnect-log excerpt and a short debugging walkthrough or reproduction record. Record any multiplayer tests after the fix separately, including their actual outcomes.]
+**Demonstration:** [TODO: Add an anonymized disconnect-log excerpt and a short debugging walkthrough or reproduction record. Include a replay or log from the successful retests if available.]
 
 ## 3. Interaction Design — Developed
 
