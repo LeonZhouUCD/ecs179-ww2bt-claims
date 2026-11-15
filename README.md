@@ -1,6 +1,6 @@
 # WW2 Blood Tournament — ECS 179 Competency Claims
 
-This repository contains draft claims for **Game Systems**, **Debugging and Testing**, and **Interaction Design**, all at **Developed**. The claims are based on my work extending an existing Warcraft III custom map, WW2 Blood Tournament.
+This repository contains draft claims for **Game Systems**, **Debugging and Testing**, and **Interaction Design**, all at **Developed**. The claims are based on my work extending WW2 Blood Tournament, a Warcraft III custom map originally created by **Krackles**.
 
 The source snapshot is from **1.0.6 (Lua31)**. This is a collection of code and test evidence, not a complete playable map. The original map contains inherited work; my contributions and AI assistance are described below.
 
@@ -106,8 +106,8 @@ Codex reran these three suites while preparing this repository on November 14, 2
 
 ## Credits and AI assistance
 
-- **Original map and inherited work:** [TO CONFIRM: Add the original author credits and identify what existed before my changes.]
-- **My work:** I defined the losing-streak rules and wrote the initial framework, investigated multiplayer disconnects and tested repair iterations, and proposed the commander upgrade interaction and tested it in the game. The claim sections above describe these contributions and my manual verification.
+- **Original map and inherited work:** The original map was created by **Krackles**. Its original version included eight factions: the United States, the Soviet Union, the United Kingdom, Germany, France, Poland, the Republic of China, and Japan. This map and its existing factions formed the foundation for my further development.
+- **My work:** I continued developing the map and added four factions: **Free France, Vichy France, Communist China, and Italy**. For the claims in this repository, I defined the losing-streak rules and wrote the initial framework, investigated multiplayer disconnects and tested repair iterations, and proposed the commander upgrade interaction and tested it in the game. The claim sections above describe these contributions and my manual verification.
 - **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
 - **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. For the commander upgrade interface, I proposed the interaction design, Claude Code handled most of the implementation, and I tested it in the game. [TO CONFIRM: Identify the original authorship of the automated test scripts.]
 
