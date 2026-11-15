@@ -27,7 +27,7 @@ I am applying for Developed because this adapts a gameplay rule to the existing 
 
 I wrote the initial framework for this system, then used Claude Code to help extend the implementation and debug issues.
 
-**My verification:** [TO CONFIRM: Which tests did I personally run or inspect, and what change can I independently explain?]
+**My verification:** I test the system in actual matches against AI opponents. I deliberately build poorly balanced armies to lose battles, then check whether the losing-streak system responds according to the rules I specified. This is my manual in-game testing; the automated test results linked above are separate evidence.
 
 **Demonstration:** [TODO: Add a short recording of consecutive losses, compensation, and a win resetting the streak.]
 
