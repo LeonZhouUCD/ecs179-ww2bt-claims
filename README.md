@@ -23,7 +23,9 @@ I am applying for Developed because this adapts a gameplay rule to the existing 
 - [Test cases](tests/test_streak103.py): thresholds, resets, empty rounds, simultaneous elimination, and queued reinforcements.
 - [Test results](results/mock-streak103.json): **10/10 passed** in mock Lua 5.3.
 
-**My contribution:** [TO CONFIRM: Which rules did I specify, which code did I write or modify, and which edge case did I personally investigate?]
+**My contribution:** I defined the losing-streak compensation rules, including starting compensation at three consecutive losses and setting each payment to the streak length multiplied by 1,000 Blood Points. I specified that wins and draws reset the streak, while rounds without troops leave it unchanged and award no compensation. I also specified that winning a paired battle and later dying in the central battle must not count as a loss.
+
+[TO CONFIRM: Describe my role in implementing these rules, including any Lua code I personally reviewed or modified.]
 
 **My verification:** [TO CONFIRM: Which tests did I personally run or inspect, and what change can I independently explain?]
 
