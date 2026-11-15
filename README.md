@@ -4,7 +4,7 @@ This repository contains draft claims for **Game Systems**, **Debugging and Test
 
 The source snapshot is from **1.0.6 (Lua31)**. This is a collection of code and test evidence, not a complete playable map. The original map contains inherited work; my contributions and AI assistance are described below.
 
-`[TO CONFIRM]` marks information I need to fill in before submission. `[TODO]` marks missing screenshots or videos.
+`[TODO]` marks demonstration evidence still to add, such as screenshots, videos, or log excerpts.
 
 ## 1. Game Systems — Developed
 
@@ -52,7 +52,7 @@ I am applying for Developed based on my role in investigating a recurring failur
 
 Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing, and I personally participated in every repair iteration.
 
-The automated regression tests are included as supporting project evidence. Codex adapted their file paths and ran the suites while preparing this repository; that recorded run is separate from my personal in-game testing.
+The automated regression tests were originally written by Claude Code and are included as supporting project evidence. Codex adapted their file paths and ran the suites while preparing this repository; that recorded run is separate from my personal in-game testing.
 
 **My verification:** My initial hypothesis was that the disconnects were caused by network problems. My friend and I switched among US, European, and Asian servers and tried troubleshooting our connections. These checks did not explain or resolve the disconnects. Reviewing the disconnect logs then indicated a desynchronization error, which shifted the investigation toward client-local UI behavior and Lua object-reference handling. These initial observations identified a desynchronization issue but did not by themselves establish the exact code-level cause.
 
@@ -100,7 +100,7 @@ python tests/test_mac70.py
 
 Results are written to `results/`. The tests stub Warcraft III engine functions, so they do not replace a World Editor, in-game, or multiplayer test.
 
-The Lua files in `source/` are unchanged copies of the 1.0.6 modular project. The test cases come from that release; their file-loading and output paths were adapted for this repository. The losing-streak test reads the modular Lua source directly instead of extracting the same functions from the assembled map script. The older panel file is included only for comparison.
+The Lua files in `source/` are unchanged copies of the 1.0.6 modular project. The test scripts come from that release and were originally written by Claude Code. Codex adapted their file-loading and output paths for this repository. The losing-streak test reads the modular Lua source directly instead of extracting the same functions from the assembled map script. The older panel file is included only for comparison.
 
 Codex reran these three suites while preparing this repository on November 14, 2026. That run is separate from the manual in-game testing described in the claims.
 
@@ -109,6 +109,6 @@ Codex reran these three suites while preparing this repository on November 14, 2
 - **Original map and inherited work:** The original map was created by **Krackles**. Its original version included eight factions: the United States, the Soviet Union, the United Kingdom, Germany, France, Poland, the Republic of China, and Japan. This map and its existing factions formed the foundation for my further development.
 - **My work:** I continued developing the map and added four factions: **Free France, Vichy France, Communist China, and Italy**. For the claims in this repository, I defined the losing-streak rules and wrote the initial framework, investigated multiplayer disconnects and tested repair iterations, and proposed the commander upgrade interaction and tested it in the game. The claim sections above describe these contributions and my manual verification.
 - **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
-- **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. For the commander upgrade interface, I proposed the interaction design, Claude Code handled most of the implementation, and I tested it in the game. [TO CONFIRM: Identify the original authorship of the automated test scripts.]
+- **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. For the commander upgrade interface, I proposed the interaction design, Claude Code handled most of the implementation, and I tested it in the game. Claude Code also wrote the original automated test scripts included here.
 
 The screenshots and videos are still to be added. All three competency levels are requested, not yet verified by the course staff.
