@@ -25,7 +25,7 @@ I am applying for Developed because this adapts a gameplay rule to the existing 
 
 **My contribution:** I defined the losing-streak compensation rules, including starting compensation at three consecutive losses and setting each payment to the streak length multiplied by 1,000 Blood Points. I specified that wins and draws reset the streak, while rounds without troops leave it unchanged and award no compensation. I also specified that winning a paired battle and later dying in the central battle must not count as a loss.
 
-[TO CONFIRM: Describe my role in implementing these rules, including any Lua code I personally reviewed or modified.]
+I wrote the initial framework for this system, then used Claude Code to help extend the implementation and debug issues.
 
 **My verification:** [TO CONFIRM: Which tests did I personally run or inspect, and what change can I independently explain?]
 
@@ -101,6 +101,6 @@ Codex reran these three suites while preparing this repository on November 14, 2
 - **Original map and inherited work:** [TO CONFIRM: Add the original author credits and identify what existed before my changes.]
 - **My work:** [TO CONFIRM: Complete the contribution and verification fields under each claim.]
 - **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
-- **Earlier AI assistance:** [TO CONFIRM: State which gameplay code, debugging suggestions, interface changes, and tests were AI-assisted, and what I personally reviewed, modified, or verified.]
+- **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. [TO CONFIRM: Describe AI assistance for the other claims and identify what I personally reviewed, modified, or verified.]
 
 The screenshots and videos are still to be added. All three competency levels are requested, not yet verified by the course staff.
