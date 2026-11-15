@@ -48,11 +48,13 @@ I am applying for Developed because this connects an identified risk to a specif
 - [Regression tests](tests/test_sync80.py): prohibited-operation stubs, panel behavior tests, and source guards.
 - [Test results](results/mock-sync80.json): **17/17 passed** across the broader synchronization suite, including panel checks.
 
-**My contribution:** [TO CONFIRM: What did I personally do in collecting reports, forming the hypothesis, tracing code, making the fix, and selecting tests?]
+**My contribution:** I tested new Lua versions with a friend who regularly helps playtest my game. During these multiplayer sessions, we repeatedly observed players disconnecting. I investigated the failures by trying different server regions, checking possible network problems, and reviewing disconnect logs.
 
-**My verification:** [TO CONFIRM: Describe one hypothesis or attempted fix I evaluated and what I learned from its result.]
+[TO CONFIRM: Describe my role in tracing the specific Lua/UI code paths, implementing the fixes, and selecting regression tests, including any AI assistance.]
 
-**Demonstration:** [TODO: Add a debugging walkthrough or reproduction record. Only include multiplayer outcomes that I actually observed.]
+**My verification:** My initial hypothesis was that the disconnects were caused by network problems. My friend and I switched among US, European, and Asian servers and tried troubleshooting our connections. These checks did not explain or resolve the disconnects. Reviewing the disconnect logs then indicated a desynchronization error, which shifted the investigation toward client-local UI behavior and Lua object-reference handling. These observations identify the failure as a desynchronization issue; they do not by themselves establish the exact code-level cause or demonstrate that the fixes resolved it.
+
+**Demonstration:** [TODO: Add an anonymized disconnect-log excerpt and a short debugging walkthrough or reproduction record. Record any multiplayer tests after the fix separately, including their actual outcomes.]
 
 ## 3. Interaction Design — Developed
 
