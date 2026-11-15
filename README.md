@@ -50,9 +50,9 @@ I am applying for Developed based on my role in investigating a recurring failur
 
 **My contribution:** I tested new Lua versions with a friend who regularly helps playtest my game. During these multiplayer sessions, we repeatedly observed players disconnecting. I investigated the failures by trying different server regions, checking possible network problems, and reviewing disconnect logs.
 
-Claude Code handled most of the code-level analysis and repair. I personally participated in in-game testing during every repair iteration.
+Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing, and I personally participated in every repair iteration.
 
-[TO CONFIRM: Identify who designed or selected the automated regression tests and which, if any, I personally reviewed or ran.]
+The automated regression tests are included as supporting project evidence. Codex adapted their file paths and ran the suites while preparing this repository; that recorded run is separate from my personal in-game testing.
 
 **My verification:** My initial hypothesis was that the disconnects were caused by network problems. My friend and I switched among US, European, and Asian servers and tried troubleshooting our connections. These checks did not explain or resolve the disconnects. Reviewing the disconnect logs then indicated a desynchronization error, which shifted the investigation toward client-local UI behavior and Lua object-reference handling. These initial observations identified a desynchronization issue but did not by themselves establish the exact code-level cause.
 
@@ -107,6 +107,6 @@ Codex reran these three suites while preparing this repository on November 14, 2
 - **Original map and inherited work:** [TO CONFIRM: Add the original author credits and identify what existed before my changes.]
 - **My work:** [TO CONFIRM: Complete the contribution and verification fields under each claim.]
 - **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
-- **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair, while I personally participated in in-game testing during every repair iteration. [TO CONFIRM: Describe AI assistance for the Interaction Design claim and clarify authorship and personal review of the automated regression tests.]
+- **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. [TO CONFIRM: Describe AI assistance for the Interaction Design claim and identify the original authorship of the automated test scripts.]
 
 The screenshots and videos are still to be added. All three competency levels are requested, not yet verified by the course staff.
