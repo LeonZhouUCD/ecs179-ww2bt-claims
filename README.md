@@ -39,7 +39,7 @@ Different players can open different UI panels. The earlier panel coordination c
 
 The revised implementation uses ordinary Lua callbacks for panel queries and closing actions. The tests check that opening a second panel closes the first, closing the active panel clears its state, and idle polling leaves panels closed. The mock harness raises errors for prohibited trigger operations, and source checks look for those operations being reintroduced.
 
-I am applying for Developed because this connects an identified risk to a specific change and repeatable regression checks. This evidence supports the panel change; it does not establish that every multiplayer desynchronization has been fixed.
+I am applying for Developed based on my role in investigating a recurring failure, testing a network-related hypothesis, using logs to narrow the problem, and personally testing each repair iteration. The code comparison and automated regression checks provide supporting evidence for the changes. They do not establish that every multiplayer desynchronization has been fixed.
 
 **Code and tests**
 
@@ -50,9 +50,13 @@ I am applying for Developed because this connects an identified risk to a specif
 
 **My contribution:** I tested new Lua versions with a friend who regularly helps playtest my game. During these multiplayer sessions, we repeatedly observed players disconnecting. I investigated the failures by trying different server regions, checking possible network problems, and reviewing disconnect logs.
 
-[TO CONFIRM: Describe my role in tracing the specific Lua/UI code paths, implementing the fixes, and selecting regression tests, including any AI assistance.]
+Claude Code handled most of the code-level analysis and repair. I personally participated in in-game testing during every repair iteration.
+
+[TO CONFIRM: Identify who designed or selected the automated regression tests and which, if any, I personally reviewed or ran.]
 
 **My verification:** My initial hypothesis was that the disconnects were caused by network problems. My friend and I switched among US, European, and Asian servers and tried troubleshooting our connections. These checks did not explain or resolve the disconnects. Reviewing the disconnect logs then indicated a desynchronization error, which shifted the investigation toward client-local UI behavior and Lua object-reference handling. These observations identify the failure as a desynchronization issue; they do not by themselves establish the exact code-level cause or demonstrate that the fixes resolved it.
+
+My testing during the repair iterations was manual in-game testing, separate from the automated mock results linked above. [TO CONFIRM: Describe the results of the multiplayer retests, including whether disconnects recurred and the approximate number or duration of test sessions.]
 
 **Demonstration:** [TODO: Add an anonymized disconnect-log excerpt and a short debugging walkthrough or reproduction record. Record any multiplayer tests after the fix separately, including their actual outcomes.]
 
@@ -103,6 +107,6 @@ Codex reran these three suites while preparing this repository on November 14, 2
 - **Original map and inherited work:** [TO CONFIRM: Add the original author credits and identify what existed before my changes.]
 - **My work:** [TO CONFIRM: Complete the contribution and verification fields under each claim.]
 - **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
-- **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. [TO CONFIRM: Describe AI assistance for the other claims and identify what I personally reviewed, modified, or verified.]
+- **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair, while I personally participated in in-game testing during every repair iteration. [TO CONFIRM: Describe AI assistance for the Interaction Design claim and clarify authorship and personal review of the automated regression tests.]
 
 The screenshots and videos are still to be added. All three competency levels are requested, not yet verified by the course staff.
