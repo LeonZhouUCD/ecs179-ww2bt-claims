@@ -64,7 +64,13 @@ The automated regression tests were originally written by Claude Code and are in
 
 After the fixes, my friend and I tested approximately three multiplayer matches and observed no further disconnects in those matches. These retests, like my testing during each repair iteration, were manual in-game tests, separate from the automated mock results linked above.
 
-**Demonstration:** [TODO: Add an anonymized disconnect-log excerpt and a short debugging walkthrough or reproduction record. Include a replay or log from the successful retests if available.]
+**Single-player panel check (November 21, 2026, map version 1.0.6)**
+
+I opened and closed panels in a solo game. In the 19-second clip, Commanders is visible at 0:02, Army Overview at 0:10, and Achievements at 0:14. At 0:18 the panels are closed and the round countdown has continued. [Watch the panel check (MP4)](evidence/debugging/single-player-panels.mp4)
+
+[Army Overview open](evidence/debugging/army-overview.jpg) · [Back in the game with the panels closed](evidence/debugging/back-to-game.jpg)
+
+This recording shows panel behavior on one client. My observations about multiplayer disconnects come from the earlier matches with my friend.
 
 ## 3. Interaction Design — Developed
 
@@ -117,4 +123,4 @@ Codex reran these three suites while preparing this repository on November 14, 2
 - **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
 - **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. For the commander upgrade interface, I proposed the interaction design, Claude Code handled most of the implementation, and I tested it in the game. Claude Code also wrote the original automated test scripts included here.
 
-Demonstration materials for Debugging and Testing and Interaction Design are still to be added. All three competency levels are requested, not yet verified by the course staff.
+The Interaction Design screenshots and video are still to be added. All three competency levels are requested, not yet verified by the course staff.
