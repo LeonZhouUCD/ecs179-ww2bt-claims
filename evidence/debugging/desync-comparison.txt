@@ -1,0 +1,9 @@
+Two-client desync log comparison
+
+Excerpt from the project's archived pre-fix comparison (lua-0.7.4 validation).
+These are the four hexadecimal values in the "ipse" entry for each simulation
+turn. Client labels replace the original log identifiers.
+
+Turn   Client A                               Client B
+936    0x15103  0x32b7  0x767b  0x148d414    0x15103  0x32b7  0x767b  0x148d414
+937    0x15167  0x312b  0x76ba  0x28dd328    0x15167  0x2f56  0x76b8  0x26dddbc

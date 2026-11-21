@@ -1,6 +1,6 @@
 # WW2 Blood Tournament — ECS 179 Competency Claims
 
-This repository contains draft claims for **System Interrelations**, **Debugging and Testing**, and **Interaction Loops**, all at **Developed**. The claims are based on my work extending WW2 Blood Tournament, a Warcraft III custom map originally created by **Krackles**.
+I am claiming **Developed** in **System Interrelations**, **Debugging and Testing**, and **Interaction Loops** based on my work extending WW2 Blood Tournament, a Warcraft III custom map originally created by **Krackles**.
 
 The source snapshot is from **1.0.6 (Lua31)**. This is a collection of code and test evidence, not a complete playable map. The original map contains inherited work; my contributions and AI assistance are described below.
 
@@ -41,6 +41,7 @@ I am applying for Developed based on my role in investigating a recurring failur
 - [Before: 0.7.9 panel coordination](before/panel-coordination-0.7.9.lua#L55).
 - [After: 1.0.6 panel coordination](source/modules/panel-coordination.lua#L55): `PM69_Register`, `PM69_Activate`, and `PM69_Poll`.
 - [Regression tests](tests/test_sync80.py): prohibited-operation stubs, panel behavior tests, and source guards.
+- In a pre-fix log comparison, both clients recorded the same four values at simulation turn 936. At turn 937, three values differed. [Anonymized log comparison](evidence/debugging/desync-comparison.txt)
 - [Test results](results/mock-sync80.json): **17/17 passed** across the broader synchronization suite, including panel checks.
 
 **My contribution:** I tested new Lua versions with a friend who regularly helps playtest my game. During these multiplayer sessions, we repeatedly observed players disconnecting. I investigated the failures by trying different server regions, checking possible network problems, and reviewing disconnect logs.
@@ -101,7 +102,7 @@ Results are written to `results/`. The tests stub Warcraft III engine functions,
 
 The Lua files in `source/` are unchanged copies of the 1.0.6 modular project. The test scripts come from that release and were originally written by Claude Code. Codex adapted their file-loading and output paths for this repository. The losing-streak test reads the modular Lua source directly instead of extracting the same functions from the assembled map script. The older panel file is included only for comparison.
 
-Codex reran these three suites while preparing this repository on November 14, 2026. That run is separate from the manual in-game testing described in the claims.
+Codex reran all three suites on November 21, 2026. All 92 mock checks passed (10 losing-streak, 17 synchronization, and 65 MacArthur checks). The claim sections describe my own in-game tests.
 
 ## Credits and AI assistance
 
