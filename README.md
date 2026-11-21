@@ -1,6 +1,6 @@
 # WW2 Blood Tournament — ECS 179 Competency Claims
 
-I am claiming **Developed** in **System Interrelations**, **Debugging and Testing**, and **Interaction Loops** based on my work extending WW2 Blood Tournament, a Warcraft III custom map originally created by **Krackles**.
+I am claiming **Developed** in **System Interrelations** and **Debugging and Testing**, and **Mastered** in **Interaction Loops**, based on my work extending WW2 Blood Tournament, a Warcraft III custom map originally created by **Krackles**.
 
 The source snapshot is from **1.0.6 (Lua31)**. This is a collection of code and test evidence, not a complete playable map. The original map contains inherited work; my contributions and AI assistance are described below.
 
@@ -62,13 +62,22 @@ I hosted an online multiplayer game as the only human player, with one computer 
 
 This recording shows panel behavior on one connected client. My observations about synchronization between two human players come from the earlier matches with my friend.
 
-## 3. Interaction Loops — Developed
+## 3. Interaction Loops — Mastered
 
 ### Spending the carrier's 120 mana each battle
 
 At Level 5, MacArthur gives me a choice each battle. If my army needs support now, I can spend 40 mana to call three F6F Hellcats. That leaves 80 mana, enough to spend 60 on a precision strike against one enemy ground unit. If several valuable ground units are close together, I can save all 120 for a group strike. I can watch which units survive the attack and use that observation when choosing support next round. At battle end the map removes summoned aircraft and refills the carrier to 120. [Ability costs and effects](source/modules/macarthur.lua#L92) · [Cast handlers](source/modules/macarthur.lua#L690) · [Battle cleanup and refill](source/modules/carrier-and-naval-units.lua#L29)
 
-**Why I am claiming Developed.** A change to one cost altered the choices in this loop. Precision Strike used to cost 70 mana. With 120 mana, a player could use it once and have 50 left. At 60 mana, two precision strikes fit in the same budget, so the player can hit one target, see what survives, and pick a second target later in the battle. Group Strike commits that same budget at once and selects targets within the chosen area on successive waves. [Release note for the cost change](evidence/interaction-loops/release-0.7.3.txt#L13) · [Group strike target selection](source/modules/macarthur.lua#L534)
+**Why I am claiming Mastered.** I set the carrier’s mana budget and spell costs. Precision Strike used to cost 70 mana. Reducing it to 60 gives me a second decision during the fight. I can hit one high-value unit, watch how the fight changes, and choose where a second hit would help my troops. Group Strike spends the same 120 mana on one area. I choose the area once and the game picks targets there on each wave. I played both choices at Level 5 to see when it was worth giving up that second decision. [Release note for the cost change](evidence/interaction-loops/release-0.7.3.txt#L13) · [How each wave picks its targets](source/modules/macarthur.lua#L534)
+
+**My Level 5 comparison.** Both rounds started with 120 mana available for the first cast. The timestamps are relative to each clip.
+
+| Round and recording | What I saw |
+| --- | --- |
+| [Round 2 · Two precision strikes (13 seconds)](evidence/interaction-loops/level-5-two-precision-strikes.mp4) | At **0:04.55** I had **120** mana. After the first strike I had **60** at **0:05.30**. The meter recovered to **63** while I picked the next target. After my second strike it read **4** at **0:09.35**. I could make a new targeting decision about four seconds after the first. |
+| [Round 3 · One group strike (20 seconds)](evidence/interaction-loops/level-5-group-strike.mp4) | At **0:02.50** I was aiming the circle with **120** mana. At **0:03.15** I had **0**. I could see successive impacts in the chosen area as the fight continued. |
+
+I used the second precision strike to hit a valuable enemy and give my troops an opening in that part of the field. I would save that second strike when a surviving enemy is picking off an important group of mine, such as my snipers. Against a cluster of elite ground units, I prefer Group Strike because several targets are already in reach of the same waves. At the old cost of 70, I would still have been short of mana four seconds after the first precision strike. These were different enemy formations, and my army was attacking at the same time. The clips let me compare my targeting choices, but I can’t assign individual kills to the carrier from this footage.
 
 **Code and test evidence.** These mock tests cover the effects of individual casts and the refill that starts the next cycle.
 
@@ -78,7 +87,7 @@ At Level 5, MacArthur gives me a choice each battle. If my army needs support no
 
 **My contribution and playtest evidence.** I set the carrier's 120-mana cap, the cost of each ability (40 for reinforcements, 60 for Precision Strike, and 120 for Group Strike), and the rule that refills mana after each battle. I also proposed the upgrade panel's level and cost displays and feedback, and tested the progression in Warcraft III. Claude Code handled most of the upgrade interface implementation and wrote the mock tests. At **0:57** my recording shows the final upgrade unlocking Group Strike. [Upgrade recording](evidence/interaction-design/macarthur-upgrades.mp4) · [Level 5 screenshot](evidence/interaction-design/maximum-level.jpg)
 
-**My two-round playtest (November 21, 2026)**
+**Earlier playtest at Levels 4 and 5 (November 21, 2026)**
 
 | Battle | What I did and what the game showed |
 | --- | --- |
@@ -107,6 +116,6 @@ Codex reran all three suites on November 21, 2026. All 92 mock checks passed (10
 ## Credits and AI assistance
 
 - **Original map and inherited work:** The original map was created by **Krackles**. Its original version included eight factions: the United States, the Soviet Union, the United Kingdom, Germany, France, Poland, the Republic of China, and Japan. This map and its existing factions formed the foundation for my further development.
-- **My work:** I continued developing the map and added four factions: **Free France, Vichy France, Communist China, and Italy**. For the claims in this repository, I defined the losing-streak rules and wrote the initial framework, investigated multiplayer disconnects and tested repair iterations, and designed the carrier's mana rules and upgrade interaction. I tested the carrier in the two battles shown above.
-- **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
+- **My work:** I continued developing the map and added four factions: **Free France, Vichy France, Communist China, and Italy**. For the claims in this repository, I defined the losing-streak rules and wrote the initial framework, investigated multiplayer disconnects and tested repair iterations, and designed the carrier's mana rules and upgrade interaction. I played and recorded the carrier tests and explained why I chose each attack.
+- **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests. It suggested the two-cast comparison, cropped my recordings, and checked the mana readings and timestamps.
 - **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. For the commander upgrade interface, I proposed the interaction design, Claude Code handled most of the implementation, and I tested it in the game. Claude Code also wrote the original automated test scripts included here.
