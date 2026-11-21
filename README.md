@@ -77,7 +77,16 @@ At Level 5, MacArthur gives me a choice each battle. If my army needs support no
 
 **My contribution and playtest evidence.** I proposed the upgrade panel's level and cost displays and feedback, and tested the progression in Warcraft III. Claude Code handled most of the upgrade interface implementation and wrote the mock tests. At **0:57** my recording shows the final upgrade unlocking Group Strike. [Upgrade recording](evidence/interaction-design/macarthur-upgrades.mp4) · [Level 5 screenshot](evidence/interaction-design/maximum-level.jpg)
 
-**Playtest evidence to add.** Two consecutive battles showing my support choice, its effect on the battlefield and mana bar, the refill, and what led me to change my choice in the next battle. I will also identify which changes to the carrier's combat loop I personally proposed, implemented, or tested.
+**My two-round playtest (November 21, 2026)**
+
+| Battle | What I did and what the game showed |
+| --- | --- |
+| **Round 2, Level 4** | I split the mana between two actions. At **0:25**, my F6F reinforcement call leaves **80/120**. While I aim the next ability, the meter rises to **83**. At **0:28.65**, Precision Strike brings it down to **23/120**, a cost of 60. [Round 2 recording](evidence/interaction-loops/round-2-reinforcements-and-precision.mp4) · [After calling the fighters](evidence/interaction-loops/round-2-hellcats.jpg) · [After the precision strike](evidence/interaction-loops/round-2-precision.jpg) |
+| **Round 3, Level 5** | I upgrade MacArthur and use the newly unlocked Group Strike. At **0:26**, the targeting circle is over a cluster of units and the carrier has **120/120**. At **0:30**, the meter reads **0/120** and the attack plays out over the following seconds. [Round 3 recording](evidence/interaction-loops/round-3-group-strike.mp4) · [Choosing the target area](evidence/interaction-loops/round-3-target.jpg) · [After committing all 120 mana](evidence/interaction-loops/round-3-strike.jpg) |
+
+The recordings cover the two battles separately. The second shows the full meter before the next cast. The [battle-end refill test](tests/test_mac70.py#L365) checks the reset that takes place between battles.
+
+[To confirm before submission: my reason for switching tactics and my role in setting the mana costs, cap, and refill rule.]
 
 ## Running the tests
 
