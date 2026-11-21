@@ -29,7 +29,13 @@ I wrote the initial framework for this system, then used Claude Code to help ext
 
 **My verification:** I test the system in actual matches against AI opponents. I deliberately build poorly balanced armies to lose battles, then check whether the losing-streak system responds according to the rules I specified. This is my manual in-game testing; the automated test results linked above are separate evidence.
 
-**Demonstration:** [TODO: Add a short recording of consecutive losses, compensation, and a win resetting the streak.]
+**In-game demonstration (November 21, 2026)**
+
+- My third consecutive loss triggered the first compensation payment. The highlighted message reads “Losing streak: 3 rounds. +3000 Blood Points.” [Three-loss screenshot](evidence/game-systems/three-losses.png)
+- My fourth consecutive loss raised the payment to 4,000 Blood Points. The settlement lists the 300 points from my army on a separate line above the streak bonus. [Four-loss screenshot](evidence/game-systems/four-losses.png)
+- The recording shows round four against AI opponents. At **1:41**, the round ends and the +4,000 message appears. [Round four gameplay video (MP4)](evidence/game-systems/round-four.mp4)
+
+The [win-reset test](tests/test_streak103.py#L61) checks the separate rule that winning a paired battle clears the streak.
 
 ## 2. Debugging and Testing — Developed
 
@@ -111,4 +117,4 @@ Codex reran these three suites while preparing this repository on November 14, 2
 - **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
 - **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. For the commander upgrade interface, I proposed the interaction design, Claude Code handled most of the implementation, and I tested it in the game. Claude Code also wrote the original automated test scripts included here.
 
-The screenshots and videos are still to be added. All three competency levels are requested, not yet verified by the course staff.
+Demonstration materials for Debugging and Testing and Interaction Design are still to be added. All three competency levels are requested, not yet verified by the course staff.
