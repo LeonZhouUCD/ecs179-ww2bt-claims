@@ -1,39 +1,30 @@
 # WW2 Blood Tournament — ECS 179 Competency Claims
 
-This repository contains draft claims for **Game Systems**, **Debugging and Testing**, and **Interaction Design**, all at **Developed**. The claims are based on my work extending WW2 Blood Tournament, a Warcraft III custom map originally created by **Krackles**.
+This repository contains draft claims for **System Interrelations**, **Debugging and Testing**, and **Interaction Design**, all at **Developed**. The claims are based on my work extending WW2 Blood Tournament, a Warcraft III custom map originally created by **Krackles**.
 
 The source snapshot is from **1.0.6 (Lua31)**. This is a collection of code and test evidence, not a complete playable map. The original map contains inherited work; my contributions and AI assistance are described below.
 
-## 1. Game Systems — Developed
+## 1. System Interrelations — Developed
 
-### Losing-streak compensation
+### What counts as a loss when the winner advances to the center?
 
-This system tracks consecutive losses and awards Blood Points at the end of a round. Starting with the third consecutive loss, the reward is the current streak multiplied by 1,000. A win or draw resets the streak. A round without troops does not pay a reward or change the streak.
+A player can defeat their assigned opponent, advance to the central battlefield, and lose their entire army there. Suppose that player entered the round with two consecutive losses. If the economy counted losses by checking for surviving units at the end of the round, it would count a third loss and pay 3,000 Blood Points to someone who won their pairing.
 
-The main difficulty is defining a loss in this map. Winning a paired battle and then dying in the central battle should not count as losing that paired battle. Also, an army with reinforcements still waiting to spawn should not be classified as defeated. The implementation separates round-start participation, battle outcome detection, and round-end settlement to handle these cases.
+**Why I am claiming Developed.** I adapted the compensation rule to the map's two stages of combat. I chose the paired battle as the result that determines compensation. Once a player wins that fight, the win stands through the central battle. Round settlement reads the saved win, resets the streak to zero, and awards zero streak compensation. A player who actually loses three pairings in a row earns 3,000 Blood Points.
 
-I am applying for Developed because this adapts a gameplay rule to the existing battle system and handles its edge cases. The tests check the behavior of the rules; they do not prove that the reward amounts are balanced.
+**My contribution.** I defined which battle counted, set the payout rules, and wrote the initial framework. Claude Code helped extend and debug the implementation and wrote the mock tests. I tested the payout in Warcraft III by deliberately fielding weak armies against AI opponents.
 
 **Code and tests**
 
-- [Losing-streak implementation](source/modules/losing-streak.lua#L1): `LS103_RoundStart`, `LS103_CheckSides`, and `LS103_RoundEnd`.
-- [Round-start hook](source/modules/inherited-map.lua#L1456), [battle-outcome hook](source/modules/movement-and-battle.lua#L874), and [round-end hook](source/modules/inherited-map.lua#L2077).
-- [Test cases](tests/test_streak103.py): thresholds, resets, empty rounds, simultaneous elimination, and queued reinforcements.
-- [Test results](results/mock-streak103.json): **10/10 passed** in mock Lua 5.3.
+- **Battle outcome.** During combat, the code records a win when the assigned opponent is eliminated. Later checks skip players whose pairing already has a result. [Combat check](source/modules/movement-and-battle.lua#L882) · [Record the paired result once](source/modules/losing-streak.lua#L19)
+- **Economic consequence.** At settlement, only a recorded paired loss increments the streak. A recorded win clears it before the payout threshold is checked. [Round-end call](source/modules/inherited-map.lua#L2077) · [Streak and payout calculation](source/modules/losing-streak.lua#L44)
+- **Regression test.** The test eliminates the paired opponent first, then wipes out the remaining armies to simulate deaths in the center. It checks that the winner's streak stays at zero. Later in the same suite, a player on a five-loss streak wins a pairing, dies in the center, and finishes with a zero streak and no compensation. All 10 cases passed in mock Lua 5.3. [Simulated battle sequence](tests/test_streak103.py#L41) · [Winner's later death](tests/test_streak103.py#L53) · [Existing streak reset and payout checked](tests/test_streak103.py#L61) · [Test results](results/mock-streak103.json)
 
-**My contribution:** I defined the losing-streak compensation rules, including starting compensation at three consecutive losses and setting each payment to the streak length multiplied by 1,000 Blood Points. I specified that wins and draws reset the streak, while rounds without troops leave it unchanged and award no compensation. I also specified that winning a paired battle and later dying in the central battle must not count as a loss.
-
-I wrote the initial framework for this system, then used Claude Code to help extend the implementation and debug issues.
-
-**My verification:** I test the system in actual matches against AI opponents. I deliberately build poorly balanced armies to lose battles, then check whether the losing-streak system responds according to the rules I specified. This is my manual in-game testing; the automated test results linked above are separate evidence.
-
-**In-game demonstration (November 21, 2026)**
+**In-game demonstration of the payouts (November 21, 2026)**
 
 - My third consecutive loss triggered the first compensation payment. The highlighted message reads “Losing streak: 3 rounds. +3000 Blood Points.” [Three-loss screenshot](evidence/game-systems/three-losses.png)
 - My fourth consecutive loss raised the payment to 4,000 Blood Points. The settlement lists the 300 points from my army on a separate line above the streak bonus. [Four-loss screenshot](evidence/game-systems/four-losses.png)
 - The recording shows round four against AI opponents. At **1:41**, the round ends and the +4,000 message appears. [Round four gameplay video (MP4)](evidence/game-systems/round-four.mp4)
-
-The [win-reset test](tests/test_streak103.py#L61) checks the separate rule that winning a paired battle clears the streak.
 
 ## 2. Debugging and Testing — Developed
 
@@ -127,5 +118,3 @@ Codex reran these three suites while preparing this repository on November 14, 2
 - **My work:** I continued developing the map and added four factions: **Free France, Vichy France, Communist China, and Italy**. For the claims in this repository, I defined the losing-streak rules and wrote the initial framework, investigated multiplayer disconnects and tested repair iterations, and proposed the commander upgrade interaction and tested it in the game. The claim sections above describe these contributions and my manual verification.
 - **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
 - **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. For the commander upgrade interface, I proposed the interaction design, Claude Code handled most of the implementation, and I tested it in the game. Claude Code also wrote the original automated test scripts included here.
-
-All three competency levels are requested, not yet verified by the course staff.
