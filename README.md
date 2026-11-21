@@ -4,8 +4,6 @@ This repository contains draft claims for **Game Systems**, **Debugging and Test
 
 The source snapshot is from **1.0.6 (Lua31)**. This is a collection of code and test evidence, not a complete playable map. The original map contains inherited work; my contributions and AI assistance are described below.
 
-`[TODO]` marks demonstration evidence still to add, such as screenshots, videos, or log excerpts.
-
 ## 1. Game Systems — Developed
 
 ### Losing-streak compensation
@@ -64,13 +62,13 @@ The automated regression tests were originally written by Claude Code and are in
 
 After the fixes, my friend and I tested approximately three multiplayer matches and observed no further disconnects in those matches. These retests, like my testing during each repair iteration, were manual in-game tests, separate from the automated mock results linked above.
 
-**Single-player panel check (November 21, 2026, map version 1.0.6)**
+**Online panel check with one human player (November 21, 2026, map version 1.0.6)**
 
-I opened and closed panels in a solo game. In the 19-second clip, Commanders is visible at 0:02, Army Overview at 0:10, and Achievements at 0:14. At 0:18 the panels are closed and the round countdown has continued. [Watch the panel check (MP4)](evidence/debugging/single-player-panels.mp4)
+I hosted an online multiplayer game as the only human player, with one computer slot occupied. I stayed connected as I opened and closed the panels. In the 19-second clip, Commanders is visible at 0:02, Army Overview at 0:10, and Achievements at 0:14. At 0:18 the panels are closed and the round countdown has continued. [Online lobby](evidence/debugging/online-lobby.jpg) · [Watch the panel check (MP4)](evidence/debugging/online-panel-check.mp4)
 
 [Army Overview open](evidence/debugging/army-overview.jpg) · [Back in the game with the panels closed](evidence/debugging/back-to-game.jpg)
 
-This recording shows panel behavior on one client. My observations about multiplayer disconnects come from the earlier matches with my friend.
+This recording shows panel behavior on one connected client. My observations about synchronization between two human players come from the earlier matches with my friend.
 
 ## 3. Interaction Design — Developed
 
@@ -80,7 +78,7 @@ The commander panel shows the current level, the next upgrade's cost, and the ab
 
 A click sends a synchronized upgrade request. While waiting, the interface can show a confirmation message and temporarily prevent further requests. The synchronized handler validates the upgrade and provides a result message. The intended flow is for the player to understand the requirements, request an upgrade, and receive feedback about what happened.
 
-I am applying for Developed because these design choices explain upgrade requirements and give players feedback about available actions. The supporting tests verify gameplay rules behind the interface. My manual tests below check the interface's behavior in the game; screenshots and a video are still to be added.
+I am applying for Developed because these design choices explain upgrade requirements and give players feedback about available actions. The supporting tests verify gameplay rules behind the interface. The recording below shows what I saw as a player when I tried to buy the final upgrade.
 
 **Code and tests**
 
@@ -95,9 +93,16 @@ Claude Code handled most of the implementation, and I was responsible for testin
 
 **My verification:** I personally tested the interface in Warcraft III and confirmed that the upgrade button was disabled when resources were insufficient, the required upgrade cost was displayed correctly, and upgrading worked when I had enough resources. These were manual in-game checks, separate from the automated test results linked above.
 
-**Screenshot:** [TODO: Add an actual in-game screenshot of the commander panel.]
+**In-game demonstration (November 21, 2026)**
 
-**Video:** [TODO: Show insufficient resources, an affordable upgrade, successful completion, and maximum level. Show the pending state only if it is visible.]
+I tested the same Level 4 to Level 5 upgrade with two different balances. I added resources during the demo so I could check both states. The final upgrade sequence starts at **0:50**. [Watch the MacArthur upgrade recording (MP4)](evidence/interaction-design/macarthur-upgrades.mp4)
+
+| Time | What the player sees |
+| --- | --- |
+| 0:50 | I have 3,000 Blood Points. The panel shows the 4,000 cost, explains the shortfall, and disables Upgrade. [Insufficient points](evidence/interaction-design/insufficient-points.jpg) |
+| 0:56.45 | I now have 13,000 Blood Points. The cost still reads 4,000 and Upgrade is available. [Upgrade available](evidence/interaction-design/upgrade-available.jpg) |
+| 0:56.75 | After I click, the button dims and the panel briefly reads “Confirming upgrade...”. [Request pending](evidence/interaction-design/confirming-upgrade.jpg) |
+| 0:57.10 | My balance falls to 9,000. The panel shows Level 5 of 5, the button is disabled at maximum level, and the game reports that SB2C Group Strike is unlocked. [Upgrade complete](evidence/interaction-design/maximum-level.jpg) |
 
 ## Running the tests
 
@@ -123,4 +128,4 @@ Codex reran these three suites while preparing this repository on November 14, 2
 - **Assistance with this submission:** Codex helped draft the claims and README, collect the relevant source files, adapt test paths, and run the mock tests.
 - **Earlier AI assistance:** For the losing-streak compensation system, I wrote the initial framework and used Claude Code to assist with further implementation and debugging. For the multiplayer desynchronization issue, Claude Code handled most of the code-level analysis and repair. My main verification role was manual in-game testing during every repair iteration. For the commander upgrade interface, I proposed the interaction design, Claude Code handled most of the implementation, and I tested it in the game. Claude Code also wrote the original automated test scripts included here.
 
-The Interaction Design screenshots and video are still to be added. All three competency levels are requested, not yet verified by the course staff.
+All three competency levels are requested, not yet verified by the course staff.
