@@ -1,6 +1,6 @@
 # WW2 Blood Tournament — ECS 179 Competency Claims
 
-This repository contains draft claims for **System Interrelations**, **Debugging and Testing**, and **Interaction Design**, all at **Developed**. The claims are based on my work extending WW2 Blood Tournament, a Warcraft III custom map originally created by **Krackles**.
+This repository contains draft claims for **System Interrelations**, **Debugging and Testing**, and **Interaction Loops**, all at **Developed**. The claims are based on my work extending WW2 Blood Tournament, a Warcraft III custom map originally created by **Krackles**.
 
 The source snapshot is from **1.0.6 (Lua31)**. This is a collection of code and test evidence, not a complete playable map. The original map contains inherited work; my contributions and AI assistance are described below.
 
@@ -61,39 +61,23 @@ I hosted an online multiplayer game as the only human player, with one computer 
 
 This recording shows panel behavior on one connected client. My observations about synchronization between two human players come from the earlier matches with my friend.
 
-## 3. Interaction Design — Developed
+## 3. Interaction Loops — Developed
 
-### MacArthur commander upgrades
+### Spending the carrier's 120 mana each battle
 
-The commander panel shows the current level, the next upgrade's cost, and the abilities unlocked at each level. When the player lacks enough Blood Points, it explains the restriction and disables the upgrade button. At maximum level, it states that no further upgrade is available.
+At Level 5, MacArthur gives me a choice each battle. If my army needs support now, I can spend 40 mana to call three F6F Hellcats. That leaves 80 mana, enough to spend 60 on a precision strike against one enemy ground unit. If several valuable ground units are close together, I can save all 120 for a group strike. I can watch which units survive the attack and use that observation when choosing support next round. At battle end the map removes summoned aircraft and refills the carrier to 120. [Ability costs and effects](source/modules/macarthur.lua#L92) · [Cast handlers](source/modules/macarthur.lua#L690) · [Battle cleanup and refill](source/modules/carrier-and-naval-units.lua#L29)
 
-A click sends a synchronized upgrade request. While waiting, the interface can show a confirmation message and temporarily prevent further requests. The synchronized handler validates the upgrade and provides a result message. The intended flow is for the player to understand the requirements, request an upgrade, and receive feedback about what happened.
+**Why I am claiming Developed.** A change to one cost altered the choices in this loop. Precision Strike used to cost 70 mana. With 120 mana, a player could use it once and have 50 left. At 60 mana, two precision strikes fit in the same budget, so the player can hit one target, see what survives, and pick a second target later in the battle. Group Strike commits that same budget at once and selects targets within the chosen area on successive waves. [Release note for the cost change](evidence/interaction-loops/release-0.7.3.txt#L13) · [Group strike target selection](source/modules/macarthur.lua#L534)
 
-I am applying for Developed because these design choices explain upgrade requirements and give players feedback about available actions. The supporting tests verify gameplay rules behind the interface. The recording below shows what I saw as a player when I tried to buy the final upgrade.
+**Code and test evidence.** These mock tests cover the effects of individual casts and the refill that starts the next cycle.
 
-**Code and tests**
+- A reinforcement call produces three Hellcats, and a precision strike deals 4,000 damage to its target. [Reinforcement test](tests/test_mac70.py#L232) · [Damage test](tests/test_mac70.py#L264)
+- Group Strike runs for four waves and gives priority to the three highest-value eligible targets. [Wave test](tests/test_mac70.py#L326) · [Target priority test](tests/test_mac70.py#L351)
+- The refill test starts the carrier at 3 mana and checks that it returns to 120. All 65 cases in the MacArthur mock suite passed. [Refill implementation](source/modules/macarthur.lua#L596) · [Refill test](tests/test_mac70.py#L365) · [Suite results](results/mock-mac70.json)
 
-- [Panel text and presentation](source/modules/macarthur.lua#L92): `Mac70_PanelText` and `Mac70_RenderPanel`.
-- [Upgrade validation and response](source/modules/macarthur.lua#L51), and [request handling](source/modules/macarthur.lua#L140).
-- [Supporting tests](tests/test_mac70.py): affordability, deductions, ability unlocks, and maximum-level rejection.
-- [Test results](results/mock-mac70.json): **65/65 passed** for the broader MacArthur module. These are not 65 interface or usability tests.
+**My contribution and playtest evidence.** I proposed the upgrade panel's level and cost displays and feedback, and tested the progression in Warcraft III. Claude Code handled most of the upgrade interface implementation and wrote the mock tests. At **0:57** my recording shows the final upgrade unlocking Group Strike. [Upgrade recording](evidence/interaction-design/macarthur-upgrades.mp4) · [Level 5 screenshot](evidence/interaction-design/maximum-level.jpg)
 
-**My contribution:** I proposed the level and cost displays, disabling the upgrade button when resources are insufficient, and feedback after upgrading. For example, I wanted the button to be disabled when the player could not afford an upgrade while still showing the required cost, so the player could understand why upgrading was unavailable and how much it would cost.
-
-Claude Code handled most of the implementation, and I was responsible for testing the interface in the game.
-
-**My verification:** I personally tested the interface in Warcraft III and confirmed that the upgrade button was disabled when resources were insufficient, the required upgrade cost was displayed correctly, and upgrading worked when I had enough resources. These were manual in-game checks, separate from the automated test results linked above.
-
-**In-game demonstration (November 21, 2026)**
-
-I tested the same Level 4 to Level 5 upgrade with two different balances. I added resources during the demo so I could check both states. The final upgrade sequence starts at **0:50**. [Watch the MacArthur upgrade recording (MP4)](evidence/interaction-design/macarthur-upgrades.mp4)
-
-| Time | What the player sees |
-| --- | --- |
-| 0:50 | I have 3,000 Blood Points. The panel shows the 4,000 cost, explains the shortfall, and disables Upgrade. [Insufficient points](evidence/interaction-design/insufficient-points.jpg) |
-| 0:56.45 | I now have 13,000 Blood Points. The cost still reads 4,000 and Upgrade is available. [Upgrade available](evidence/interaction-design/upgrade-available.jpg) |
-| 0:56.75 | After I click, the button dims and the panel briefly reads “Confirming upgrade...”. [Request pending](evidence/interaction-design/confirming-upgrade.jpg) |
-| 0:57.10 | My balance falls to 9,000. The panel shows Level 5 of 5, the button is disabled at maximum level, and the game reports that SB2C Group Strike is unlocked. [Upgrade complete](evidence/interaction-design/maximum-level.jpg) |
+**Playtest evidence to add.** Two consecutive battles showing my support choice, its effect on the battlefield and mana bar, the refill, and what led me to change my choice in the next battle. I will also identify which changes to the carrier's combat loop I personally proposed, implemented, or tested.
 
 ## Running the tests
 

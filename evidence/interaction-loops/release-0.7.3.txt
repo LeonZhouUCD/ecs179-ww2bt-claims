@@ -1,0 +1,37 @@
+WW2 BT 0.7.3 Lua16
+==================
+
+Built from the WW2 BT 0.7.2 Lua15 archives (lua-0.7.2/delivery) and the native Lua
+project in project/. Deliveries: delivery/WW2 BT 0.7.3 Lua16 editable.w3x and
+delivery/WW2 BT 0.7.3 Lua16 protected.w3x (identical gameplay data and script).
+
+Changes
+-------
+MacArthur / SB2C
+- SB2C bombs now deal exactly 4000 damage. The bomb's final damage is set in a damage
+  event after armor and attack-type modifiers (previously Chaos damage could double it).
+- SB2C Precision Strike (AM72) costs 60 mana (was 70). Panel text and AI threshold updated.
+- SB2C Group Strike (AM73) shows the 500-radius target circle (Ncl3 options 1 -> 3).
+- Group Strike waves strike the 3 enemy ground units with the highest individual Blood
+  Point value (Bounty_Value) inside the circle; equal values are chosen at random.
+- After every battle (normal rounds, each bonus turn, each final tournament fight), every
+  commander building with mana is refilled to full (hooked into Carrier_Stop).
+
+Commander quick-select button
+- A button showing the chosen commander's icon sits directly right of the idle-builder
+  button. Click selects your commander building; double-click also centres the camera.
+  Hidden until a commander is chosen. Selection is local to the clicking player.
+
+Italian Elite Squad (hIE0, 500 gold)
+- All four soldier types (hIE1-hIE4): 600 hitpoints (was 350).
+- Breda PG rifleman (hIE2): attack cooldown 1.1 (was 0.9). Every attack is a four-round
+  burst: the normal shot plus 3 scripted rounds 0.12 s apart, each a visible Bullet.mdx
+  projectile flying to the target and dealing the same damage as the first round.
+  Army-overview DPS and AI squad values updated (AI HP 3000, ground DPS 201).
+
+Verification
+------------
+- Static: build compiles runtime and editor scaffolds (Lua 5.3), parity and native archive
+  reads pass (validation.json). Read-back: validation/readback73.json, 26/26.
+- Mock: test_mac70.py, 65/65 (stubbed natives; not an engine test). The Breda PG burst,
+  the UI button and the damage hook have not been tested in World Editor or the game.
